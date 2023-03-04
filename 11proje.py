@@ -30,6 +30,6 @@ ogrenciler.update({
     }
 })
 
-print(ogrenciler[no])
+print(ogrenciler)
 
 #2-Ogrenci numarasini kullanicidan alip ilgili ogrenci bilgisini gosterin.
