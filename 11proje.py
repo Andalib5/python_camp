@@ -17,19 +17,25 @@ ogrenciler = {
 }
 
 #1-Bilgileri verilen ogrencileri kullanicidan aldiginiz bilgilerle dictionary icinde saklayiniz.
-no = input("ogrenci numaranizi giriniz: ")
-ad = input("adinizi giriniz: ")
-soyad = input("soyadinizi griniz: ")
-telefon = input("telefon numaranizi giriniz: ")
+while True:
+    no = input("ogrenci numaranizi giriniz: ")
+    ad = input("adinizi giriniz: ")
+    soyad = input("soyadinizi griniz: ")
+    telefon = input("telefon numaranizi giriniz: ")
 
-ogrenciler.update({
-    no: {
-        'ad': ad,
-        'soyad': soyad,
-        'telefon': telefon
-    }
-})
+    ogrenciler.update({
+        no: {
+            'ad': ad,
+            'soyad': soyad,
+            'telefon': telefon
+        }
+    })
 
 print(ogrenciler)
 
 #2-Ogrenci numarasini kullanicidan alip ilgili ogrenci bilgisini gosterin.
+bilgi = input("ogrenci numaranizi giriniz: ")
+if bilgi in ogrenciler:
+    print(ogrenciler[bilgi])
+else:
+    print(bilgi, "numarali ogrenci bulunmamaktadir.")
