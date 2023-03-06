@@ -17,19 +17,18 @@ ogrenciler = {
 }
 
 #1-Bilgileri verilen ogrencileri kullanicidan aldiginiz bilgilerle dictionary icinde saklayiniz.
-while True:
-    no = input("ogrenci numaranizi giriniz: ")
-    ad = input("adinizi giriniz: ")
-    soyad = input("soyadinizi griniz: ")
-    telefon = input("telefon numaranizi giriniz: ")
+no = input("ogrenci numaranizi giriniz: ")
+ad = input("adinizi giriniz: ")
+soyad = input("soyadinizi griniz: ")
+telefon = input("telefon numaranizi giriniz: ")
 
-    ogrenciler.update({
-        no: {
-            'ad': ad,
-            'soyad': soyad,
-            'telefon': telefon
-        }
-    })
+ogrenciler.update({
+    no: {
+        'ad': ad,
+        'soyad': soyad,
+        'telefon': telefon
+    }
+})
 
 print(ogrenciler)
 
